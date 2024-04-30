@@ -1,0 +1,210 @@
+.menu-btn {
+    position: absolute;
+    z-index: 3;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+    transition: all 0.5s ease-out; }
+    .menu-btn .btn-line {
+      width: 50px;
+      height: 10px;
+      margin: 0 0 5px 0;
+      background: #333;
+      transition: all 0.5s ease-out; }
+    .menu-btn.close {
+      transform: rotate(180deg); }
+      .menu-btn.close .btn-line:nth-child(1) {
+        transform: rotate(45deg) translate(10px, 20px); }
+      .menu-btn.close .btn-line:nth-child(2) {
+        opacity: 0; }
+      .menu-btn.close .btn-line:nth-child(3) {
+        transform: rotate(-45deg) translate(10px, -10px); }
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.9;
+    visibility: hidden; }
+    .menu.show {
+      visibility: visible; }
+    .menu-branding, .menu-nav {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      float: left;
+      width: 50%;
+      height: 100vh;
+      overflow: hidden; }
+    .menu-nav {
+      margin: 0;
+      padding: 0;
+      background: #8d8d8d;
+      list-style: none;
+      transform: translate3d(0, -100%, 0);
+      transition: all 0.5s ease-out; }
+      .menu-nav.show {
+        transform: translate3d(0, 0, 0); }
+    .menu-branding {
+      background: #767575;
+      transform: translate3d(0, 100%, 0);
+      transition: all 0.5s ease-out; }
+      .menu-branding.show {
+        transform: translate3d(0, 0, 0); }
+      .menu-branding .portrait {
+        width: 250px;
+        height: 250px;
+        background: url("images/rose.jpg");
+        border-radius: 50%;
+        border: solid 0px #fff; }
+    .menu .nav-item {
+      transform: translate3d(600px, 0, 0);
+      transition: all 0.5s ease-out; }
+      .menu .nav-item.show {
+        transform: translate3d(0, 0, 0); }
+      .menu .nav-item.current > a {
+        color: #fff; }
+    .menu .nav-link {
+      display: inline-block;
+      position: relative;
+      font-size: 30px;
+      text-transform: uppercase;
+      padding: 1rem 0;
+      font-weight: 300;
+      color: #875555;
+      text-decoration: none;
+      transition: all 0.5s ease-out; }
+      .menu .nav-link:hover {
+        color: #9f9ea9; }
+  
+  .nav-item:nth-child(1) {
+    transition-delay: 0.1s; }
+  
+  .nav-item:nth-child(2) {
+    transition-delay: 0.2s; }
+  
+  .nav-item:nth-child(3) {
+    transition-delay: 0.3s; }
+  
+  .nav-item:nth-child(4) {
+    transition-delay: 0.4s; }
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+/* nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+} */
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+#services {
+    text-align: center; /* Center align the content */
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to new lines */
+    justify-content: center; /* Horizontally center the images */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 5px; /* Add some space between images */
+}
+
+@media screen and (max-width: 768px) {
+    .image-container {
+        justify-content: center; /* Center images on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image-container {
+        flex-direction: column; /* Stack images vertically on smaller screens */
+        align-items: center; /* Center align images vertically */
+    }
+}
+
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery-images img {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+#contact {
+    text-align: center; /* Center align content */
+    padding: 20px; /* Add some padding for spacing */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    max-width: 400px; /* Limit width of form */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+label, input, textarea, button {
+    margin-bottom: 15px; /* Add space between form elements */
+    width: 100%; /* Make form elements full width */
+}
+
+button {
+    width: auto; /* Reset width to default for button */
+}
+
+
+footer {
+    background-color: #8d8d8d;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NV Floral</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css">
+
+</head>
+<body>
+    <header>
+        <h1>NV Floral</h1>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+          </div>
+      
+          <nav class="menu">
+            <div class="menu-branding">
+              <div class="portrait"></div>
+            </div>
+            <ul class="menu-nav">
+              <li class="nav-item current">
+                <a href="#about" class="nav-link">
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#services" class="nav-link">
+                  Services
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#gallery" class="nav-link">
+                  Gallery
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <img src="images/about.png" alt="Flower Shop">
+            <p>Welcome to NV Floral, your destination for exquisite floral arrangements. We are dedicated to creating stunning bouquets and decorations for any occasion.</p>
+
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="image-container">
+                <img src="images/services1.jpg" alt="Image 1">
+                <img src="images/services2.jpg" alt="Image 2">
+                <img src="images/services3.jpg" alt="Image 3">
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="slider">
+                <div>
+                  <img src="images/image1.jpg" alt="Image 1">
+                  <div class="caption">Caption for Image 1</div>
+                </div>
+                <div>
+                  <img src="images/image2.jpg" alt="Image 2">
+                  <div class="caption">Caption for Image 2</div>
+                </div>
+                <div>
+                  <img src="images/image3.jpg" alt="Image 3">
+                  <div class="caption">Caption for Image 3</div>
+                </div>
+              </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Ready to order? Contact us today!</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 NV Floral. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>
