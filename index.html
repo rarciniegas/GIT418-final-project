@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NV Floral</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css">
 
@@ -83,14 +84,31 @@
             <h2>Contact Us</h2>
             <p>Ready to order? Contact us today!</p>
             <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="5" required></textarea>
+                <label>How would you like to be contacted?</label>
+                <div>
+                  <input type="radio" id="phoneRadio" name="contactMethod" value="phone" required>
+                  <label for="phoneRadio">Phone</label>
+                </div>
+                <div>
+                  <input type="radio" id="emailRadio" name="contactMethod" value="email">
+                  <label for="emailRadio">Email</label>
+                </div>
+                <label>When would you like to be contacted?</label>
+                <input type="text" id="datepicker">
+
+
+                <input type="submit" value="Submit">
+              </form>
         </section>
     </main>
     <footer>
@@ -98,6 +116,7 @@
     </footer>
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
     <script src="slider.js"></script>
 </body>

@@ -173,16 +173,45 @@ img {
 }
 
 #contact {
+    max-width: 480px;
+
     text-align: center; /* Center align content */
     padding: 20px; /* Add some padding for spacing */
 }
 
-form {
+  /* style the form */
+  form {
     display: flex;
-    flex-direction: column; /* Stack form elements vertically */
-    max-width: 400px; /* Limit width of form */
-    margin: 0 auto; /* Center the form horizontally */
-}
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  label {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  input, textarea {
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    width: 300px;
+  }
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  .submit-message {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  .submit-message span {
+    color: green;
+  }
+
 
 label, input, textarea, button {
     margin-bottom: 15px; /* Add space between form elements */

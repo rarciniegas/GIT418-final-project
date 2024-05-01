@@ -8,3 +8,7 @@ $(document).ready(function(){
       arrows: true // Show arrows navigation
     });
 });
+
+$( function() {
+    $( "#datepicker" ).datepicker();
+  } );
